@@ -1,6 +1,6 @@
 # GIS-project
 This site is part of the GIS course project.
-![logo](https://i.ibb.co/2KDC9tj/github-logo.png)
+![Picture33](https://user-images.githubusercontent.com/62096501/173328807-0d182466-2fef-4416-a8c9-f3e036b437ef.png)
 
 # GIS Final Project
 
