@@ -1,0 +1,34 @@
+{% extends 'webApp/base.html' %} 
+{% block pageTitle %}רשימת השגרירות בישראל :{% endblock %}
+{% block content %}
+
+    <form method="post" ,action="#">
+        {% csrf_token %}
+        <table class="table" dir="rtl">
+            <thead>
+            <tr>
+                <th scope="col">שם השגרירות</th>
+                <th scope="col">כתובת</th>
+                <th scope="col">טלפון</th>
+                <th scope="col">שעות פתיחה</th>
+                <th scope="col">הכוונה</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for embassy in Embassies %}
+                <tr>
+                    <th scope="row">{{ embassy.name }}</th>
+                    <td>{{ embassy.address }}</td>
+                    <td>{{ embassy.phone }}</td>
+                    <td>{{ embassy.hours }}</td>
+                    <td><a href= '{% for id,link in id_link_map.items %}{% if id == embassy.id %}{{ link }}{% endif %}{% endfor %}'>לחץ כאן</a></td>
+                </tr>
+                
+            {% endfor %}
+            </tbody>
+        </table>
+        </div>
+    </form>
+
+
+{% endblock %}

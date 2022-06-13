@@ -1,0 +1,29 @@
+{% extends 'webApp/base.html' %} {% block title %}Communication_LTD{% endblock %}
+{% block pageTitle %}תוצאות : {% endblock %}
+
+{% block public_content %}
+
+    {% if results %}
+        <table class="table">
+            <tbody>
+
+            {% for result in results %}
+            <tr>
+                <th scope="row">
+                {% for prop in result %}
+                    <td>{{ prop.name }}</td>
+                    <td>{{ prop.address }}</td>
+                    <td>{{ prop.phone }}</td>
+                    <td>{{ prop.hours }}</td>
+                    <td><a href="{{ prop.location }}">לחץ כאן</a></td>
+                {% endfor %}
+                </th>
+            </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    {% else %}
+        <h3>No results that match your user found...</h3>
+    {% endif %}
+
+{% endblock %}

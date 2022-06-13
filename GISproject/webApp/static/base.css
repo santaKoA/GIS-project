@@ -1,0 +1,17 @@
+body {
+    background-color: #A3CEF1;
+    height: 1000px;
+}
+
+.container {
+    min-height: 100%;
+
+}
+
+.logo-img {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    height: 100px;
+    width: 100px;
+    justify-content: center;
+}
