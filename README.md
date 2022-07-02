@@ -7,21 +7,6 @@ This site is part of the GIS course project.
 ![enter image description here](https://img.shields.io/badge/Uptime-100%25-blue) ![enter image description here](https://img.shields.io/badge/Version-Beta-green) ![enter image description here](https://img.shields.io/badge/Contributors-5-orange)
 
 
-## Versions
-
-Our site has 2 versions:
-
-**Vulnerable version V4.2**
-
-Vulnerable to XSS and SQLI
-You can download it [HERE](https://github.com/Sagi313/computerSecurity/tree/v4.2)
-This can also be found on branch `mater`
-
-**Safe version V4.3**
-
-Has no known vulnerabilities
-You can download it [HERE](https://github.com/Sagi313/computerSecurity/tree/v4.3)
-This can also be found on branch `SafeVersion`
 
 ## How to install?
 
